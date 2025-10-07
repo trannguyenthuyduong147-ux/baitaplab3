@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+actor "User" as U
+
+rectangle "Login System" {
+  usecase "Đăng nhập thành công" as UC1
+  usecase "Sai thông tin đăng nhập" as UC2
+  usecase "Bỏ trống Username/Password" as UC3
+  usecase "Truy cập Forgot password?" as UC4
+  usecase "Truy cập SIGN UP" as UC5
+  usecase "Kiểm tra Social Login Buttons" as UC6
+}
+
+U --> UC1
+U --> UC2
+U --> UC3
+U --> UC4
+U --> UC5
+U --> UC6
+
+@enduml
